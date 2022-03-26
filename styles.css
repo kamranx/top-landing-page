@@ -4,41 +4,67 @@
     padding: 0;
 }
 
-header {
-    background-color: #1f2937;
-    padding: 10px 10%;
-    display: flex;
-    justify-content: space-between;
+img {
+    max-width: 100%;
 }
 
-header .logo {
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+.header {
+    background-color: #1f2937;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .logo {
     font-size: 24px;
     color: #f9faf8;
 }
 
-header nav ul li a {
+.header .navbar ul a {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
 }
 
-header nav ul {
+.header .navbar ul {
     list-style-type: none;
     display: flex;
     gap: 1.4em;
+    flex-wrap: wrap;
 }
 
 main .hero {
     background-color: #1f2937;
-    padding: 10%;
+}
+
+main .hero .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
     gap: 20px;
 }
 
 main .hero .text {
-    width: 300px;
+    /* min-width: 200px; */
     flex: 1;
+    margin-top: 30px;
 }
 
 main .hero .text h1 {
@@ -64,34 +90,23 @@ button {
     flex-shrink: 0;
 }
 
-main .hero .image {
-    width: 300px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
-}
-
-main .information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5% 10%;
-}
-
 main .information h2 {
     font-size: 36px;
     font-weight: extra-bold;
     color: #1f2937;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
-main .information .info {
+main .information .boxes {
     display: flex;
     gap: 40px;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 
 }
 
-main .information .info .image {
+main .information .image {
     width: 140px;
     height: 140px;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
@@ -100,21 +115,21 @@ main .information .info .image {
     margin: 10px 0;
 }
 
-main .information .info .info-1,
-.info-2,
-.info-3,
-.info-4 {
+main .information .box {
     text-align: center;
     width: 140px;
 }
 
 main .quote {
     background-color: #e5e7eb;
+}
+
+main .quote .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5% 20%;
-    gap: 10px;
+    gap: 15px;
+    padding: 100px;
 }
 
 main .quote .text {
@@ -122,7 +137,6 @@ main .quote .text {
     font-weight: lighter;
     font-style: italic;
     color: #1f2937;
-
 }
 
 main .quote .footer {
@@ -133,12 +147,19 @@ main .quote .footer {
 }
 
 main .cta {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+main .cta .container {
     display: flex;
-    margin: 5% 10%;
-    padding: 5% 10%;
+    border-radius: 8px;
+    padding: 50px 100px;
     background-color: #3882f6;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 main .cta h3 {
@@ -154,13 +175,14 @@ main .cta p {
 }
 
 main .cta button {
-    border: 3px solid #fff;
+    border: 2px solid #fff;
     color: #f9faf8;
+    align-self: flex-end;
  }
 
  footer {
     background-color: #1f2937;
-    padding: 10px 10%;
+    padding: 10px;
     text-align: center;
     color: #f9faf8;
     font-size: 18px;
