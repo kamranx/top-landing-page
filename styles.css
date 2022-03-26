@@ -132,6 +132,12 @@ main .quote .container {
     padding: 100px;
 }
 
+@media screen and (max-width: 600px) {
+    main .quote .container {
+        padding: 50px 30px;
+    }
+}
+
 main .quote .text {
     font-size: 36px;
     font-weight: lighter;
