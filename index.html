@@ -32,10 +32,45 @@
                 <div class="text">
                     <h1>This website is awesome</h1>
                     <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-                    <button type="button">Sign up</button>
+                    <button id="signUpBtn">Sign up</button>
                 </div>
                 <img src="https://traversymedia.com/images/grid.svg" alt="An SVG image">
             </div>    
+        </section>
+        <section id="signUp" class="modal">
+            <div class="container">
+                <div class="box">
+                    <span class="closeBtn">&times;</span>
+                    <h1>Sign Up</h1>
+                    <div class="user">
+                        <i class="gg-user"></i>
+                        <input type="text" name="username" class="username" autocomplete="off" placeholder="username">
+                        <i class="gg-mail"></i>
+                        <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
+                        <i class="gg-lock"></i>
+                        <input type="password" name="password" class="password" autocomplete="off" placeholder="password">
+                    </div>
+                    <button>Submit</button>
+                    <p class="signin">Already have an account? <span id="signInP">Sign In</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="signIn" class="modal2">
+            <div class="container">
+                <div class="box">
+                    <span class="closeBtn">&times;</span>
+                    <h1>Sign In</h1>
+                    <div class="user">
+                        <i class="gg-user"></i>
+                        <input type="text" name="username" class="username" autocomplete="off" placeholder="username"/>
+                        <i class="gg-lock"></i>
+                        <input type="password" name="password" class="password" autocomplete="off" placeholder="password"/>
+                    </div>
+                    <p class="reset-password">Forget Password?</p>
+                    <button>Submit</button>
+                    <p class="signup">First time here? <span id="signUpP">Sign Up</span></p>
+                </div>
+            </div>
         </section>
         <section class="information">
             <div class="container">
@@ -72,7 +107,7 @@
                     <h3>Call to action! It's time!</h3>
                     <p>Sign up for our product by clicking that button right over there!</p>
                 </div>
-                <button type="button">Sign up</button>
+                <button id="signUpBtn2">Sign up</button>
             </div>    
         </section>
     </main>
@@ -81,5 +116,6 @@
             <p>Copyright &copy; The Odin Project 2022</p>
         </div>
     </footer>
+    <script src="main.js"></script>    
 </body>
 </html>
